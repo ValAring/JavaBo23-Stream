@@ -11,16 +11,23 @@ Schritt 3: Sortiert die Liste in aufsteigender Reihenfolge.
 Schritt 4: Führt eine 'reduce'-Operation durch, um die Summe aller Zahlen in der Liste zu berechnen.
 Schritt 5: Nutzt 'forEach' und gebt jede verarbeitete Zahl aus.
 Schritt 6: Sammelt die verarbeiteten Zahlen in einer neuen Liste mit 'collect'.
+
+Bonus-Aufgaben
+Schaue dir die Datei students.csv an. Kopiere die Datei in das Root-Verzeichnis deines Projektes.
+Nutze Streams, um die Datei zeilenweise einzulesen und auszugeben (Tipp: Files.lines(Path.of("students.csv")))
+Entferne dabei die Überschrift
+Wandel die Zeilen jeweils in die Klasse Student um
+Entferne ungültige Zeilen und Duplikate
 */
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("---- STREAMS ----");
 
-        //List<Integer> myNumbers = List.of(3,6,9,12,2,4,6,8,10,3);
         List<Integer> myNumbers = List.of(2,1,3,6,5,4,7,10,8,9);
         System.out.println("Origin: "+myNumbers);
 
-        List<Integer> evenNumbers = myNumbers.stream().filter(i -> i % 2 == 0).sorted().toList();
+        List<Integer> evenNumbers = myNumbers.stream().filter(i -> i % 2 == 0).toList();
         System.out.println("Even numbers: " + evenNumbers);
 
         List<Integer> doubledNr = myNumbers.stream().map(i -> i * 2).toList();
