@@ -11,18 +11,15 @@ Schritt 3: Sortiert die Liste in aufsteigender Reihenfolge.
 Schritt 4: Führt eine 'reduce'-Operation durch, um die Summe aller Zahlen in der Liste zu berechnen.
 Schritt 5: Nutzt 'forEach' und gebt jede verarbeitete Zahl aus.
 Schritt 6: Sammelt die verarbeiteten Zahlen in einer neuen Liste mit 'collect'.
-
-Bonus-Aufgaben
-Schaue dir die Datei students.csv an. Kopiere die Datei in das Root-Verzeichnis deines Projektes.
-Nutze Streams, um die Datei zeilenweise einzulesen und auszugeben (Tipp: Files.lines(Path.of("students.csv")))
-Entferne dabei die Überschrift
-Wandel die Zeilen jeweils in die Klasse Student um
-Entferne ungültige Zeilen und Duplikate
 */
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("---- STREAMS ----");
+
+        System.out.println("Coming soon: List creation with random generated Numbers!");
+        //List of random  Numbers
+        //List<Integer> ranNR = List.of(createRandomNumbers());
 
         List<Integer> myNumbers = List.of(2,1,3,6,5,4,7,10,8,9);
         System.out.println("Origin: "+myNumbers);
@@ -50,5 +47,11 @@ public class Main {
                 .collect(Collectors.toList());
 
         System.out.println("--------\nZwischensummen: "+zSummen);
+    }
+
+    public static int createRandomNumbers(){
+        // write Feature to create random numbers
+        int random = 0; //Platzhalter
+        return random;
     }
 }
