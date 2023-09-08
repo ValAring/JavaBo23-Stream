@@ -19,6 +19,8 @@ public class Main {
 
         System.out.println("Hier eine neue Änderung, zum testen wie das mit den branchen und GitHub geht...");
 
+        System.out.println("Hier eine neue Änderung, zum testen wie das mit den branchen und GitHub geht...");
+
         System.out.println("Coming soon: List creation with random generated Numbers!");
         //List of random  Numbers
         //List<Integer> ranNR = List.of(createRandomNumbers());
