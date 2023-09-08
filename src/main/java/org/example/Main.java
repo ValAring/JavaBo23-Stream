@@ -24,6 +24,7 @@ public class Main {
         System.out.println("Coming soon: List creation with random generated Numbers!");
         //List of random  Numbers
         //List<Integer> ranNR = List.of(createRandomNumbers());
+        System.out.println("Some Bugfix?");
 
         List<Integer> myNumbers = List.of(2,1,3,6,5,4,7,10,8,9);
         System.out.println("Origin: "+myNumbers);
