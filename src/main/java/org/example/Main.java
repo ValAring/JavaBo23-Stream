@@ -24,6 +24,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("---- STREAMS ----");
 
+        System.out.println("Hier eine neue Änderung, zum testen wie das mit den branchen und GitHub geht...");
+
         List<Integer> myNumbers = List.of(2,1,3,6,5,4,7,10,8,9);
         System.out.println("Origin: "+myNumbers);
 
